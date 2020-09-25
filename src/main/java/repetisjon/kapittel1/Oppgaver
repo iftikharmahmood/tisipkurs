@@ -1,0 +1,54 @@
+1.8 Repetisjonsoppgaver
+______________________________________
+
+1 Hva betyr forkortelsen RAM? Hva er det?
+        Random Access Memory ( primær minne )
+
+2 Hva er et operativsystem?
+    Programmet som administrerer maskinvaren setter opp brukergrensesnitt mot bruker og holder orden på alle prosesser
+    som kjører på maskinen. Eksempler er Unix, Windows, Linux, MS-DOS, MacOs,
+
+3 Gi eksempler på sammenhørende programfiler og datafiler.
+    Excel som bruker en tabell med data for beregning av statestik, selve data kan ligge på en flatfil hvor som helst
+    og er ikke en del av selve spreadsheet programmet.
+
+4 Hva karakteriserer et tekstlig brukergrensesnitt?
+    Typisk linux, unix, dos, Zos. all interaksjon med maskinen går gjennom kommandoer fra komando prompt
+    enten som et eget vindu eller som det eneste grensesnitte mellom bruker og maskin.
+
+5 Hva er et programmeringsspråk? Nevn tre slike.
+    Regelset, måter og instruksjoner for å kunne instruere en datamaskin
+
+6 Hva mener vi med en kommentar i programkode?
+    Tekst som ikke leses av kopilatoren, men som er til forklasring for brukere som skal lese koden
+
+7 Hva er maskinkode, og hva er byte-kode? Gjør rede for likheter og forskjeller.
+    Maskinkode er når instruksjoner er kompilert tilk et språk hvor koden kan forstås av prossesoren (maskinvaren),
+    denne konden er uleslig for nenneske. Byte kode er mellomting mellom kildekode og maskinkode.
+    Er flyttbar mellom ulike maskiner og operativsystem, da den igjen skal tolkes av feks JVM.
+
+8 Forklar hvordan vi får kompilert og kjørt et Java-program.
+    A. Bruk et IDE verktøy for å skrive, lagre, teste kompilere og kjøre programmer.
+    B. Manuelt: Skrive kode med tekst editor, lagre koden som en navn.java fil, kjøre kommandoen javac i ledetekstvidu på navn.java.
+    (navn.java blir kompilert til navn.class)Deretter kjøre kommandoen java på navn uten endelse.
+
+9 Gjør rede for elementene i livsløpet til programvare.
+
+    1. Analyse fase   Problemanalyse og kravspesifikasjon
+      Hvilke oppgaver skal programsystemet utføre (rammer) --> resultat  kravspesifikasjon
+
+    2. Design fase     programvaredesign
+       Designe systemet. høy detaljeringsgrad, løse alle problemer mht koding --> programvaredesign
+
+
+    3. Implementasjonsfasen Overgang til programkode (implementasjon)
+        Å gjøre det som er nødvendig for å få maskin perifere utstyr og program til å virke (sammen).
+
+    4. Installasjon og test fase
+        Systemet installeres hos kunde og testes ut.
+
+    5. Vedlikeholdsfase Driftsfase
+        Oppdateringer, tilgang og data tilrettelegging, feilretting, opplæring.
+
+    6. Utfasing End of life cycle
+        Kontrollert avvikling og overføring av verdilast /data til neste system.
