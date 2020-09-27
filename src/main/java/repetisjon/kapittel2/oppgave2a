@@ -1,0 +1,33 @@
+Kapittel 2.2 Oppgave 2 a og b
+_________________________________
+
+
+Reserverte ord i programmet:
+    package
+    public
+    class
+    static
+    void
+    final
+    double
+
+Java API navn i programmet:
+    String
+    System
+    out
+    println
+
+Navn & Egendefinerte navn
+    main
+    args
+
+    Omregning
+    FAKTOR
+    antallKalorier
+    antallKJoule
+
+Variabler i programmet:
+
+    Konstant variabel: FAKTOR
+    variabel: antallKalorier
+    variabel: antallKJoule
