@@ -6,30 +6,31 @@
 package repetisjon.kapittel3;
 
 public class Tallrekke2 {
-    static int a=20;
-    static int b=30;
-    static int p=20;
-    static int q=40;
-    static int r=30;
-    static int s=15;
+   private int a=20;
+   private int b=30;
+   private int p=20;
+   private int q=40;
+   private int r=30;
+   private int s=15;
 
         public static void main(String[] args){
+            Tallrekke2 tallrekke2 = new Tallrekke2();
 
-            if (a < b){
-                a = b;
-                b = 10;
+            if (tallrekke2.a < tallrekke2.b){
+                tallrekke2.a = tallrekke2.b;
+                tallrekke2.b = 10;
             }
-            if (p == 20){
-                q = 13;
+            if (tallrekke2.p == 20){
+                tallrekke2.q = 13;
             }
             else {
-                q = 17;
+                tallrekke2.q = 17;
             }
-            if ( r > s) {
-                q = 100;
+            if ( tallrekke2.r > tallrekke2.s) {
+                tallrekke2.q = 100;
             }
-            s = 200;
+            tallrekke2.s = 200;
 
-            System.out.println("a= "+a+", b= "+b+", p= "+p+", q= "+q+", r= "+r+", s= "+s);
+            System.out.println("a= "+ tallrekke2.a +", b= "+tallrekke2.b +", p= "+ tallrekke2.p+", q= "+ tallrekke2.q +", r= "+ tallrekke2.r +", s= "+ tallrekke2.s);
         }
 }

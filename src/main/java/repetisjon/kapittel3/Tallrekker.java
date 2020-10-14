@@ -7,11 +7,10 @@ package repetisjon.kapittel3;
 
 public class Tallrekker {
 
-    static int a=20;
-    static int b=30;
-    static int c=40;
-
     public static void main(String[] args){
+        int a=20;
+        int b=30;
+        int c=40;
 
         if (a > b){
             a = b;

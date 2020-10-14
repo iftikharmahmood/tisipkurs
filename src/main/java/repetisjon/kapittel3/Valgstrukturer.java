@@ -8,8 +8,6 @@ import java.util.Scanner;
 
 public class Valgstrukturer {
 
-    public static char kode;
-
     public static void main (String[] args){
 
         Scanner scanner = new Scanner(System.in);
@@ -17,6 +15,8 @@ public class Valgstrukturer {
         System.out.println("Tast inn et antall av XXX");
         double antallet= scanner.nextDouble();
         scanner.close();
+
+        char kode;
 
         if (antallet >= 20){
             kode = 'M';

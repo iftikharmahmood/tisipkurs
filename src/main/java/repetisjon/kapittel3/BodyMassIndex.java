@@ -10,11 +10,10 @@ import java.util.Scanner;
 
 public class BodyMassIndex {
 
-    public static String bmiStatus;
-
     public static void main (String[] args){
 
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Din Body Mass Index (BMI) skal regnes ut ");
         System.out.println("Tast inn din høyde i meter");
         double hoyde = scanner.nextDouble();
@@ -22,7 +21,11 @@ public class BodyMassIndex {
         System.out.println("Tast inn din vekt i kilogram");
         double vekt = scanner.nextDouble();
         scanner.close();
+
         double bmi= vekt/ ( hoyde * hoyde);
+
+        String bmiStatus;
+
         if (bmi < 19){
             bmiStatus = "Du er undervektig";
         }
