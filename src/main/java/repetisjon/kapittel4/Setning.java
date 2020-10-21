@@ -27,10 +27,22 @@ public class Setning {
 
         */
 // hvorfor funker ikke dette ?
-        while (ord != "5"){
+      /*  while (ord != "5"){
             System.out.println("Tast inn et ord: ");
             ord = scanner.next();
             setning += (ord + " ");
+        }
+        System.out.println(setning); */
+
+        while (ord != null){
+
+            System.out.println("Tast inn et ord: ");
+            ord = scanner.next();
+            setning += (ord + " ");
+            System.out.println(setning);
+            if (ord.equals("stopp") || ord.equals("null")){
+                ord=null;
+            }
         }
         System.out.println(setning);
 
