@@ -1,6 +1,6 @@
 /**
  * Kapittel 4.14
- * oppgave 3
+ * oppgave 2.2
  * Lag et program som tegner en likesidet trekant
  * Spør brukeren om antall linjer
  */
@@ -8,7 +8,7 @@ package repetisjon.kapittel4;
 
 import java.util.Scanner;
 
-public class Oppgave4_14_3 {
+public class Oppgave4_14_3 { // dette er egentlig Kapittel 4.14 oppgave 2.2
 
     private int linje;
     private final Scanner scanner = new Scanner(System.in);

@@ -1,6 +1,6 @@
 /**
  * Kapittel 4.14
- * oppgave 2
+ * oppgave 2.1
  * Lag et program som tegner en rettvinklet trekant
  * Spør brukeren om antall linjer
  */

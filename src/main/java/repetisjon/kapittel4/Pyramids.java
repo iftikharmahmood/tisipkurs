@@ -1,5 +1,6 @@
 /**
  * Detter er kopiert fra nettet som eksempel
+ * Dette er ikke mitt, brukt for læring
  */
 package repetisjon.kapittel4;
 
