@@ -1,4 +1,4 @@
-package repetisjon.kapittel4;
+package repetisjon.kapittel4.LøsningsforlagFraBoka;
 
 public class BokasLosning4_9_2 {
 

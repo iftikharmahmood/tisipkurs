@@ -1,6 +1,6 @@
 /**
  * Kapittel 4.14
- * oppgave 2.3
+ * oppgave 3
  * Lag et program som som skriverut tallverdiene for et intervall av tegn
  * Spør brukeren om Øvre og nedre verdi leses inn fra bruker
  */
