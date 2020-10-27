@@ -1,3 +1,8 @@
+/**  Kapittel 5.2
+ * Små oppgaver, oppgave 3
+ */
+
+
 package repetisjon.kapittel5;
 
 public class Sirkel {
