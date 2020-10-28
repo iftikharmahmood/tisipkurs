@@ -7,8 +7,20 @@
 package repetisjon.kapittel5;
 
 class Fag {
-    private final String fagkode;
+    // private final String fagkode;
+    private String fagkode; // oppgave 5.4 1
     private int antStud;
+
+    public Fag(){
+
+    }
+    public Fag(String fagkode){
+        this.fagkode = fagkode;
+    }
+
+    public Fag(int antStud){
+        this.antStud = antStud;
+    }
 
     public Fag(String fagkode, int antStud) {
         this.fagkode = fagkode;
@@ -19,6 +31,10 @@ class Fag {
         return fagkode;
     }
 
+    public void setFagkode(String fagkode){
+        this.fagkode = fagkode;
+    }
+
     public int getAntStud() {
         return antStud;
     }
@@ -26,4 +42,13 @@ class Fag {
     public void setAntStud(int antStud) {
         this.antStud = antStud;
     }
+
+    public String toString(){
+        return "Fagkode: " + fagkode + ", Antall studenter " + antStud;
+    }
+
+    public String ikkeGjørNoe(){
+        return null;
+    }
 }
+

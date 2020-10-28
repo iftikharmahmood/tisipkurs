@@ -18,7 +18,7 @@ public class Oppg5_3_1 {
         showMessageDialog(null, "Du skrev fagkode: " + fag1.getFagkode() + " og ant.stud = " + fag1.getAntStud());
 
         //oppgave 2
-        //Fag fag2 = fag1;
+        fag2 = fag1;
         showMessageDialog(null, "Du skrev fagkode: " + fag2.getFagkode() + " og ant.stud = " + fag2.getAntStud());
 
         //oppgave 4
@@ -27,8 +27,17 @@ public class Oppg5_3_1 {
         showMessageDialog(null, "Du skrev fagkode: " + fag3.getFagkode() + " og ant.stud = " + fag3.getAntStud());
 
         //oppgave 5
-        final Fag fag4 = new Fag(null, null);
+        Fag fag4 = new Fag(null, 0);
         showMessageDialog(null, " Du skrev fagkode: " + fag4.getFagkode() + " og ant.stud = " + fag4.getAntStud());
+        System.out.println(fag4.getFagkode());
+        if (fag4.ikkeGjørNoe() == null){
+            System.out.println(" parametret er tomt");
+        } else {
+            System.out.println(" verdi er satt på parameter");
+        }
+        // NullPointerException :-)
+        fag4=null;
+        System.out.println(fag4.ikkeGjørNoe());
 
 
     }
