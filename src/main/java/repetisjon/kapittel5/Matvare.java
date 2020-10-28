@@ -43,6 +43,25 @@ public class Matvare {
         return KARBOHYDRATER_GRAM;
     }
 
+    public double finnEnergiJoule(double vekt){
+        double energiKJ = (ENERGI_KILO_JOULE /100) * vekt;
+        return energiKJ;
+    }
+
+    public double finnEnergiCalories(double vekt){
+        double energiKC = (finnEnergiJoule(vekt) * 4.8);
+        return energiKC;
+    }
+    public double finnFett(double vekt){
+        double fett = (FETT_GRAM /100) * vekt;
+        return fett;
+    }
+
+    public double finnKarbs(double vekt){
+        double karbohydrater = (KARBOHYDRATER_GRAM /100) * vekt;
+        return karbohydrater;
+    }
+
     public void tabellHundreGramVare(){
         double kCal = ENERGI_KILO_JOULE * 4.18;
         System.out.println(" --------= Næringsinnhold pr 100gram for matvaren " + NAVN + " =--------- ");
