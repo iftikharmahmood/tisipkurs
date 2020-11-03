@@ -43,9 +43,9 @@ class Fag {
         this.antStud = antStud;
     }
 
-    public String toString(){
-        return "Fagkode: " + fagkode + ", Antall studenter " + antStud;
-    }
+   public String toString(){
+       return "Fagkode: " + fagkode + ", Antall studenter " + antStud;
+   }
 
     public String ikkeGjørNoe(){
         return null;

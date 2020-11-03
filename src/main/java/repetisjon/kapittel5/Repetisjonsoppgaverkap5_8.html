@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Repetisjonsoppgaver 5.8</title>
+</head>
+<body>
+1. Sammenheng mellom objekt og klasse. Klasse = oppskridt på objektet
+
+2. irrelevant, objektene vi lager er begrenset til det vi definerer som atributter og funksjoner for objektet.
+objektet skal gjenspeile objektet i virkligheten.
+3. main() metoden er den som aktiverer objektene i klassaen og kaller på disse og er derfor klienten, mens objektene i
+klassen er tjenere som utfører handlinger.
+4. I klassediagram ser vi det ved at klassen har metoder disse er markert med tilgangsmetoden + (public)
+og er tilgjengelige utenfra. I koden vises dette ved at vi kaller metodene med det aktuellet objektets kvalifikator.
+5. En kostruktør deklareres med:  eventuell tilgansmetode Klassenavnet (og eventueller parametre som skal være med
+i oppbygging av objektet){
+deretter kommer kroppen. den kan enten være tom eller legge opp til konstruksjon av felter i objektet}
+Deklarasjonen av metoden består av tilgangsmetode eventuell returverdi metodeNavn(evrntuelle parametre){
+metode kropp med "action"
+eventuell en returverdi (utverdi) }
+om en konstruktør ikke deklareres finnes det en default tom konstruktør til klassen, dette gjelder ikke metodene.
+metodene har funksjoner og kan enten muttere feltene eller gjøre funksjoner.
+Det er signaturen som skiller mellom konstruktører eller metoder med samme eller ulike navn. Signaturen består av antall
+parametre og type parametre, ikke hva parametrene er tagget med av navn ( dvs metoder og konstruktør kan overloades).
+6. forklart over Metoder utføere fuksjoner, konstruktør er oppskriften på objektet som skal konstrueres og metodene
+skal fungere på.
+7. Returverdi er den verdien vi får ut av en metode etter at den har utført en funksjon / beregning. Denne verdien
+kan fanges opp på forskjellige måter av klienten ( enten main eller andre objekter / metoder).
+8. {Readonly} i klassediagramet tilsvarer modifikatoren finale og devinerer at feltet ikke kan endres etter at det har
+fått tilordnet en verdi ( gjelder ikke default verdi om variablen ikke er initiert, variablen er da ev typen konstan)
++ og - er aksessmetoder og brukes for å synligjøre eller gjemme feltyer eller metoder i klassen (objektet) - gjemmer
+feltet eller metoden inne i klassen( objektet) og kan kun nås av klienten gjennom en objekt kvalifikator.
++ gjør feltet eller metoden tilgjengelig utenfra.
+9. Et parameter er det en metode eller en konstruktør for venter av verdi inn til seg for behandling, et argument er det
+klienten gir som argument til parametret, dette er kommunikasjonen hvor klienten leverer ut en verdi til tjeneren for å
+få utført en tjeneste, tjeneren etterspør denne informasjoen for å kunne lever tjenesten.
+10. En objekt og en referanse er ikke det samme, en referanse er en peker til hvor i minnet objektet befinner seg,
+referansen brukes derfor til å dressere det konkrete objektet, hvis referanser ikke lenger peker på selve objekte,
+er objektet tapt.
+11. Hvis en referanse settes lik en annen referanse har vi et objekt med to referanser, et objekt ikke har noen
+referanse til seg lenger og er tapt.
+12.Ved å sette finale foran en objektvariabel, utelukkes muligheten for at variablen kan endre verdi i objekte når
+variablen først blir initiert.
+13. Ja, klassen har en default konstruktør, som kan brukes til å lage objekter.
+14. Signaturen består av antall parametre og datatypen til disse parametrene, således kan metoder eller konstruktører
+ha samme navn så lenge signaturen til hver og en er unik. Hva referansen (navnet) på parametrene er insignifikat.
+
+</body>
+</html>
