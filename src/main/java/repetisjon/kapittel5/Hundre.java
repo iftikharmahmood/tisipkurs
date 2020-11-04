@@ -26,10 +26,19 @@ public class Hundre {
     public int spillerA(){
         int resultPlayerA = 0;
         int round = 1;
+        int poeng;
 
         while (resultPlayerA < 100){
             System.out.println( " Runde nummer : " + round + "\n");
-            resultPlayerA += kastTerningen();
+
+            poeng = kastTerningen();
+
+            if (poeng == 1){
+                resultPlayerA = 0;
+            } else {
+
+                resultPlayerA += poeng;
+            }
             System.out.println( " Antall Poeng spiller A: " + resultPlayerA + "\n");
             round++;
         }
@@ -40,10 +49,16 @@ public class Hundre {
     public int spillerB(){
         int resultPlayerB = 0;
         int round = 1;
+        int poeng;
 
         while (resultPlayerB < 100){
             System.out.println( " Runde nummer : " + round + "\n");
-            resultPlayerB += kastTerningen();
+            poeng = kastTerningen();
+            if (poeng == 1){
+                resultPlayerB = 0;
+            } else {
+                resultPlayerB += poeng;
+            }
             System.out.println( " Antall Poeng spiller B: " + resultPlayerB + "\n");
             round++;
         }
@@ -53,30 +68,19 @@ public class Hundre {
 
 
 
-    public int erFerdig(int resultPlayerA, int resultPlayerB){
+    public void erFerdig(){
+       int resultPlayerA = 0;
+       int resultPlayerB = 0;
+
+        while (resultPlayerA < 100 || resultPlayerB < 100){
+            resultPlayerA = spillerA();
+            resultPlayerB = spillerB();
+        }
 
         if ( resultPlayerA > resultPlayerB){
             System.out.println(" Vinneren er spiller A, med et poengresultat på " + resultPlayerA + "\n");
         } else {
             System.out.println(" Vinneren er spiller B, med et poengresultat på " + resultPlayerB + "\n");
         }
-
-        return  result;
-
     }
-
 }
-
-
-/*    */
-
-   /* public int spill(){
-
-        int result = kastTerningen();
-        if (result == 1){
-            result = 0;
-        } else {
-            result += result;
-        }
-        return result;
-    } */

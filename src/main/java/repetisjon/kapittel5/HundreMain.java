@@ -4,6 +4,7 @@ public class HundreMain {
     public static void main(String[] args) {
 
         Hundre hundre = new Hundre();
-        hundre.spill();
+        hundre.erFerdig();
+
     }
 }
