@@ -13,22 +13,64 @@ public class Hundre {
     private int sumPoeng;
 
     public int kastTerningen(){
-        Random terning = new Random(3);
+        Random terning = new Random(17);
 
-        int kastTerning = terning.nextInt(5)+1  ;
+        int kastTerning = terning.nextInt(5)+1;
 
+        if (kastTerning == 1){
+            kastTerning = 0;
+        }
         return kastTerning;
     }
 
+    public int spillerA(){
+        int resultPlayerA = 0;
+        int round = 1;
 
-    public int erFerdig(){
-        int result;
+        while (resultPlayerA < 100){
+            System.out.println( " Runde nummer : " + round + "\n");
+            resultPlayerA += kastTerningen();
+            System.out.println( " Antall Poeng spiller A: " + resultPlayerA + "\n");
+            round++;
+        }
+        return resultPlayerA;
+
+    }
+
+    public int spillerB(){
+        int resultPlayerB = 0;
+        int round = 1;
+
+        while (resultPlayerB < 100){
+            System.out.println( " Runde nummer : " + round + "\n");
+            resultPlayerB += kastTerningen();
+            System.out.println( " Antall Poeng spiller B: " + resultPlayerB + "\n");
+            round++;
+        }
+        return resultPlayerB;
+    }
+
+
+
+
+    public int erFerdig(int resultPlayerA, int resultPlayerB){
+
+        if ( resultPlayerA > resultPlayerB){
+            System.out.println(" Vinneren er spiller A, med et poengresultat på " + resultPlayerA + "\n");
+        } else {
+            System.out.println(" Vinneren er spiller B, med et poengresultat på " + resultPlayerB + "\n");
+        }
 
         return  result;
 
     }
 
-    public int spill(){
+}
+
+
+/*    */
+
+   /* public int spill(){
 
         int result = kastTerningen();
         if (result == 1){
@@ -36,9 +78,5 @@ public class Hundre {
         } else {
             result += result;
         }
-
-
-
-    }
-
-}
+        return result;
+    } */
