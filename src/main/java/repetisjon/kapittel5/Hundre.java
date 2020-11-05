@@ -13,14 +13,8 @@ public class Hundre {
     private int sumPoeng;
 
     public int kastTerningen(){
-        Random terning = new Random(17);
-
-        int kastTerning = terning.nextInt(5)+1;
-
-        if (kastTerning == 1){
-            kastTerning = 0;
-        }
-        return kastTerning;
+        Random terning = new Random();
+        return terning.nextInt(6)+1;
     }
 
     public int spillerA(){
@@ -64,9 +58,6 @@ public class Hundre {
         }
         return resultPlayerB;
     }
-
-
-
 
     public void erFerdig(){
        int resultPlayerA = 0;
