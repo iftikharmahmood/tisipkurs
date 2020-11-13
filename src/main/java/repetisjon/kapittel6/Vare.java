@@ -15,37 +15,36 @@ class Vare {
     public static final double MOMS = 0.24;
     //public static final double MOMSFAKTOR = 1.0 + MOMS / 100.0;
     public static final Scanner scanner = new Scanner(System.in);
-    public static Formatter f = new Formatter();
+    private final String VARENAVN;
+    private final int VARENR;
 
-    private final String varenavn;
-    private final int varenr;
     private double pris; // pris pr. kilo, alltid uten moms
     private double kvantum;
 
     public Vare(String varenavn, int varenr, double pris, double kvantum) {
-        this.varenavn = varenavn;
-        this.varenr = varenr;
+        this.VARENAVN = varenavn;
+        this.VARENR = varenr;
         this.pris = pris;
         this.kvantum = kvantum;
     }
     public Vare(String varenavn, int varenr, double pris) {
-        this.varenavn = varenavn;
-        this.varenr = varenr;
+        this.VARENAVN = varenavn;
+        this.VARENR = varenr;
         this.pris = pris;
     }
 
     public Vare(String varenavn, int varenr) {
-        this.varenavn = varenavn;
-        this.varenr = varenr;
+        this.VARENAVN = varenavn;
+        this.VARENR = varenr;
         this.pris = 0.0;
     }
 
-    public String getVarenavn() {
-        return varenavn;
+    public String getVARENAVN() {
+        return VARENAVN;
     }
 
-    public int getVarenr() {
-        return varenr;
+    public int getVARENR() {
+        return VARENR;
     }
 
     public double getPris() {
@@ -57,16 +56,16 @@ class Vare {
     }
 
     public void lesPris(){
-        System.out.println(" Tast inn prisen pr kilo i kroner for vare: " + varenavn+ ", :  ");
+        System.out.println(" Tast inn prisen pr kilo i kroner for vare: " + VARENAVN + ", :  ");
         setPris(scanner.nextDouble());
-        System.out.println(" Prisen for " + varenavn + ", er satt til : " + pris + ", kroner pr kilo");
+        System.out.println(" Prisen for " + VARENAVN + ", er satt til : " + pris + ", kroner pr kilo");
         System.out.println();
     }
 
     public void lesKvantum(){
-        System.out.println(" Tast inn antall kilo for vare: " + varenavn+ ", :  ");
+        System.out.println(" Tast inn antall kilo for vare: " + VARENAVN + ", :  ");
         setKvantum(scanner.nextDouble());
-        System.out.println(" Kvantum for " + varenavn + ", er satt til : " + kvantum + ", kilo kjøpt vare");
+        System.out.println(" Kvantum for " + VARENAVN + ", er satt til : " + kvantum + ", kilo kjøpt vare");
         System.out.println();
     }
     public void setKvantum(double kvantum){
@@ -77,6 +76,7 @@ class Vare {
     }
 
     public String beregnPris(){
+        Formatter f = new Formatter();
         double prisen;
         double mva;
         double rabatt;
@@ -137,8 +137,9 @@ class Vare {
     }
 
     public String toString() {
+        Formatter f = new Formatter();
         f.format("%.2f", pris);
-        return "Vare nr. : " + varenr + ", Varenavn : " + varenavn + ", pris pr. kg kr " + f.toString() + " u.moms.";
+             return "Vare nr. : " + VARENR + ", Varenavn : " + VARENAVN + ", pris pr. kg kr " + f.toString() + " u.moms.";
     }
 
 
