@@ -8,6 +8,7 @@
 
 package repetisjon.kapittel6;
 
+import java.util.Locale;
 import java.util.Scanner;
 import java.util.Formatter;
 
@@ -94,18 +95,20 @@ class Vare {
             f.format("%2f", mva);
             f.format("%2f", MOMS);
 
-            resultat = ("For " + kvantum + ", kilo Norgesost blir den rabbaterte prisen: "
+           resultat = ("For " + kvantum + ", kilo Norgesost blir den rabbaterte prisen: "
                     + prisen + ", kroner uten merverdiavgift. \n"
                     + " Merverdiavgiften blir:  " + mva + ", kroner. \n"
                     + " Den totale prisen på varen blir : " + (prisen + mva ) + "\n"
                     + " 10% rabatt for kjøp fra 3 kg inntil 5 kg tilsvarer " + rabatt
                     + ", kroner som er trukket fra sluttsummen \n");
 
+
         } else  if (kvantum >= 5){
             prisen = pris * kvantum;
             rabatt = prisen * 0.2;
             prisen = prisen - rabatt;
             mva =  prisen * MOMS;
+            f.format("%2f", pris);
             f.format("%2f", prisen);
             f.format("%2f", kvantum);
             f.format("%2f", rabatt);
