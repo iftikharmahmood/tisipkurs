@@ -1,9 +1,13 @@
 /**
- * Prisberegning.java  - "Programmering i Java", 4.utgave - 2009-07-01
+ * Vare.java  - "Programmering i Java", 4.utgave - 2009-07-01
  * Vare: Klassen beskriver varer med navn, nummer og pris.
  * Programmet brukes i øvingsoppgaver i kapittel 6.
- *
- *
+ * oppgave 1 og 2
+ * opp 1. Utvid klassen Vare med metoder for å beregne bestemt antall kilo av varen
+ * det er 10% rabatt for kjøp fra 3 kg og 20% rabatt fra 5 kg og oppover
+ * pris beregnes med og uten moms.
+ * endre klassen Prisberegning så metodene kan testes ut
+ * opp 2. Endre klassen Prisberegning slik at bruker kan bestemme pris og kvantum
  */
 
 package repetisjon.kapittel6;

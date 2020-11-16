@@ -1,0 +1,17 @@
+kapittel 6.2
+
+1. Deklarasjon Ansatt EnPerson (new Ansatt) Setter av plass til et objekt i heapen / oppretter et objekt i heapen
+med referanse enPerson av klassen Ansatt.
+2. Deklarasjon Ansatt EnPerson setter ikke av plass til en variabel i stacken.
+3. Deklarasjon Ansatt EnPerson (new Ansatt) Setter av plass til et objekt i heapen av klassen Ansatt.
+4. Bruk av ordet new oppretter et nytt objekt, det er ikke mulig å opprette et nytt objekt uten bruk av ordet new.
+5. Heapen rydder seg selv (scavanging) og det er som regel ikke nødvendig å gjøre det5 manuelt i java. men java tilbyr
+metoder for sletting av heap delete er ikke en kommando som brukes til å slette et objekt. For å slette et objekt kan
+det simplethen settes lik null, automatic garbage collection i javacompiler vil fjerne objektet fra heapen og minne som
+dette objektet opptok blir frigjort.
+6. Parameteroverføring vil endre på størrelsen av stacken, referanser og variabler av primitiver inkludfert
+returverdier av metoder vil endre stack størrelsen, da alle verdier blir stablet her, fungerer som FIFO kø.
+7. Returverdier fra metoder blir stablet i stacken, hvor mottakende klient henter den.
+8. Sammenhørende parameter og argument bør ha samme navn.
+9. Hvis vi har et parameter, en lokal variabelog en objektvariabel alle ved navn antTimer, så er det mulig å slille
+variablen fra de to andre, samt det er mulig p skille parametren fra de andre.
