@@ -27,7 +27,8 @@ class Prisberegning {
         // Nye data lest inn.
         vare.lesKvantum();
         vare.lesPris();
-        System.out.println(vare.beregnPris());
+       // System.out.println(vare.beregnPris());
+        vare.beregnPris();
         System.out.println(); System.out.println();
 
         System.out.println(vare.toString());
@@ -56,6 +57,7 @@ class Prisberegning {
         farin.lesPris();
         farin.lesKvantum();
         System.out.println(farin.beregnPris());
+
     }
 }
 

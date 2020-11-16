@@ -25,6 +25,7 @@ class Vare {
 
     private double pris; // pris pr. kilo, alltid uten moms
     private double kvantum;
+    private String resultat = "";
 
     public Vare(String varenavn, int varenr, double pris, double kvantum) {
         this.VARENAVN = varenavn;
@@ -85,7 +86,6 @@ class Vare {
         double prisen;
         double mva;
         double rabatt;
-        String resultat ="";
 
         if (kvantum < 5 && kvantum >= 3){
             prisen = pris * kvantum;
@@ -144,9 +144,16 @@ class Vare {
     }
 
     public String toString() {
+        String svar = "";
         Formatter f = new Formatter();
         f.format("%.2f", pris);
-             return "Vare nr. : " + VARENR + ", Varenavn : " + VARENAVN + ", pris pr. kg kr " + f.toString() + " u.moms.";
+        if (resultat == null){
+            svar = "No data avalibale for calculation";
+        } else {
+            svar = resultat;
+        }
+             return "Vare nr. : " + VARENR + ", Varenavn : " + VARENAVN + ", pris pr. kg kr " + f.toString() + " u.moms. \n"
+                     + svar ;
     }
 
 
